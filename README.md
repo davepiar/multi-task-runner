@@ -1,4 +1,4 @@
-# multi-task-runner README
+# Multi Task Runner
 
 This is the README for your extension "multi-task-runner". After writing up a brief description, we recommend including the following sections.
 
