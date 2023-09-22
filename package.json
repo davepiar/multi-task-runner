@@ -2,7 +2,7 @@
   "name": "multi-task-runner",
   "displayName": "multi-task-runner",
   "description": "Runner for multiple tasks at once",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "repository": "https://github.com/davidpiar/multi-task-runner.git",
   "license": "MIT",
   "engines": {
