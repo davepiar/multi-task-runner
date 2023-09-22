@@ -36,12 +36,16 @@ jobs:
         draft: false
         prerelease: false
 
+    - name: Get version
+      id: get_version
+      run: echo "::set-output name=version::$(node -p "require('./package.json').version")"
+
     - name: Upload VS Code Extension to Release
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.VSCE_PAT }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./multi_task_runner.vsix
-        asset_name: multi_task_runner.vsix
+        asset_path: ./multi-task-runner-${{ steps.get_version.outputs.version }}.vsix
+        asset_name: multi-task-runner-${{ steps.get_version.outputs.version }}.vsix
         asset_content_type: application/octet-stream
