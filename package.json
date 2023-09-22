@@ -3,6 +3,8 @@
   "displayName": "multi-task-runner",
   "description": "Runner for multiple tasks at once",
   "version": "0.0.1",
+  "repository": "https://github.com/davidpiar/multi-task-runner.git",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.82.0"
   },
